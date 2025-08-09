@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIP Transfer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: aliceblue;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      header {
+        background-size: cover;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        background: url(janosch-diggelmann-hL7rNgAUEBQ-unsplash.jpg)
+          center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.55); /* koyu yarı saydam katman */
+      }
+      header h1,
+      header p {
+        position: relative; /* yazılar arka plan üstünde */
+        z-index: 1;
+      }
+      nav {
+        position: relative;
+        background: #111;
+        padding: 10px;
+
+        top: 0;
+      }
+      .marka {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+        margin-right: auto;
+        margin-top: auto;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        border-radius: 4px;
+        border: solid white;
+        color: black;
+        background: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      section {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .services,
+      .vehicles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+      }
+      .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+      .card h3 {
+        margin: 10px;
+      }
+      .card p {
+        margin: 0 10px 10px;
+        font-size: 1rem;
+      }
+      footer {
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2) /* üst kenar gölgesi */;
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+      .info {
+        padding-right: 20px;
+      }
+      .info a {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .info a:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+        box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+      }
+      .isim {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="marka">Transfer Alanya</li>
+        <li><a href="#home">Ana Sayfa</a></li>
+        <li><a href="#services">Hizmetler</a></li>
+        <li><a href="#vehicles">Araçlar</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <h1>VIP Transfer Hizmeti</h1>
+      <p>Konforlu,Güvneli ve Zamanında Ulaşım</p>
+    </header>
+
+    <section id="services">
+      <h2>Hizmetlerimiz</h2>
+      <div class="services">
+        <div class="card">
+          <img
+            src="rocker-sta-RSYBi_1fhfM-unsplash.jpg"
+            alt="Havaalanı Transferi"
+          />
+          <h3>Havaalanı Transferi</h3>
+          <p>Antalya Havalimanı ve Gazipaşa Havalimanına güvenli ulaşım.</p>
+        </div>
+        <div class="card">
+          <img src="city.jpg" alt="Şehir İçi Transfer" />
+          <h3>Şehir İçi Transfer</h3>
+          <p>İş veya özel gezileriniz için şehir içi VIP transfer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="vehicles">
+      <h2>Araçlarımız</h2>
+      <div class="vehicles">
+        <div class="card">
+          <img src="mercedesvito.webp" alt="" />
+
+          <p>Konforlu ve geniş iç hacim.</p>
+        </div>
+        <div class="card">
+          <img src="wpfoto.jpeg" alt="Mercedes Sprinter" />
+          <p>Kalabalık gruplar için ideal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>İletişim</h2>
+      <p style="text-align: center">
+        Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz.
+      </p>
+      <p style="text-align: center">
+        <span class="info">
+          <a
+            style="text-decoration: none"
+            href="https://wa.me/905375679787"
+            target="_blank"
+          >
+            <i
+              style="color: green; font-size: 20px"
+              class="fa-brands fa-whatsapp"
+            ></i>
+          </a>
+          +90 537 567 97 87 ~ Oktay Demirel</span
+        >
+        <span class="info">
+          <a
+            style="text-decoration: none"
+            href="https://instagram.com/Transfer.alanya"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              style="color: #e1306c; font-size: 20px"
+              ;
+              class="fa-brands fa-instagram"
+            ></i>
+          </a>
+
+          Transfer.alanya</span
+        >
+      </p>
+    </section>
+
+    <footer>&copy; 2025 Transfer Alanya | Tüm Hakları Saklıdır.</footer>
+  </body>
+</html>
