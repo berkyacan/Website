@@ -223,7 +223,7 @@
         position: absolute;
         background: #111;
         top: 30px;
-        left: 0;
+        right: 2px;
         border-radius: 6px;
         padding: 5px;
         z-index: 9999;
@@ -233,11 +233,7 @@
       .language-menu:hover .dropdown {
         transform: scale(1.05);
         display: block;
-      }
-
-      .language-menu > a:hover + .dropdown,
-      .language-menu:hover .dropdown {
-        display: block;
+        width: 80px;
       }
 
       .language-menu .dropdown li {
@@ -261,30 +257,32 @@
           <li><a href="#vehicles">Транспортные средства</a></li>
           <li><a href="#contact">Связаться с</a></li>
           <li class="language-menu">
-            <a href="#"> 🌐 Язык </a>
+            <a href="#">
+              <img src="https://flagcdn.com/w20/ru.png" alt="Русский" />PY</a
+            >
             <ul class="dropdown">
               <li>
                 <a href="index.html"
                   ><img src="https://flagcdn.com/w20/tr.png" alt="Türkçe" />
-                  Türkçe</a
+                  TR</a
                 >
               </li>
               <li>
                 <a href="index-en.html"
                   ><img src="https://flagcdn.com/w20/gb.png" alt="English" />
-                  English</a
+                  EN</a
                 >
               </li>
               <li>
                 <a href="index-ru.html"
                   ><img src="https://flagcdn.com/w20/ru.png" alt="Русский" />
-                  Русский</a
+                  PY</a
                 >
               </li>
               <li>
                 <a href="index-de.html"
                   ><img src="https://flagcdn.com/w20/de.png" alt="Deutsch" />
-                  Deutsch</a
+                  DE</a
                 >
               </li>
             </ul>

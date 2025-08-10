@@ -203,7 +203,7 @@
     }
     .card p {
       margin: 8px 16px;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
       color: #333;
       text-align: center;
       line-height: 1.5;
@@ -225,7 +225,7 @@
       position: absolute;
       background: #111;
       top: 30px;
-      left: 0;
+      right: 2px;
       border-radius: 6px;
       padding: 5px;
       z-index: 9999;
@@ -235,11 +235,7 @@
     .language-menu:hover .dropdown {
       transform: scale(1.05);
       display: block;
-    }
-
-    .language-menu > a:hover + .dropdown,
-    .language-menu:hover .dropdown {
-      display: block;
+      width: 80px;
     }
 
     .language-menu .dropdown li {
@@ -262,30 +258,26 @@
           <li><a href="#vehicles">Vehicles</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="language-menu">
-            <a href="#">🌐 Language</a>
+            <a href="#"><img src="https://flagcdn.com/w20/gb.png" />EN</a>
             <ul class="dropdown">
               <li>
                 <a href="index.html"
-                  ><img src="https://flagcdn.com/w20/tr.png" /><br />
-                  Türkçe</a
+                  ><img src="https://flagcdn.com/w20/tr.png" /> TR</a
                 >
               </li>
               <li>
                 <a href="index-en.html"
-                  ><img src="https://flagcdn.com/w20/gb.png" /> <br />
-                  English</a
+                  ><img src="https://flagcdn.com/w20/gb.png" /> EN</a
                 >
               </li>
               <li>
                 <a href="index-ru.html"
-                  ><img src="https://flagcdn.com/w20/ru.png" /> <br />
-                  Русский</a
+                  ><img src="https://flagcdn.com/w20/ru.png" /> PY</a
                 >
               </li>
               <li>
                 <a href="index-de.html"
-                  ><img src="https://flagcdn.com/w20/de.png" /><br />
-                  Deutsch</a
+                  ><img src="https://flagcdn.com/w20/de.png" /> DE</a
                 >
               </li>
             </ul>
